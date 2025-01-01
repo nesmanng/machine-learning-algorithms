@@ -32,8 +32,8 @@ Ensures all features are treated equally by the regularization term.
 
 import numpy as np
 from sklearn.datasets import load_diabetes
-from sklearn.model_selection import train_test_split
-from sklearn.linear_model import ElasticNetCV
+from sklearn.model_selection import train_test_split, GridSearchCV, KFold
+from sklearn.linear_model import ElasticNet, ElasticNetCV
 from sklearn.preprocessing import StandardScaler
 from sklearn.metrics import mean_squared_error, r2_score
 
@@ -52,6 +52,18 @@ X_test = scaler.transform(X_test)
 # Train Elastic Net with cross-validation
 elastic_net = ElasticNetCV(l1_ratio=[0.1,0.5,0.9], alphas=np.logspace(-3,3,100), cv=5, random_state=42)
 elastic_net.fit(X_train, y_train)
+
+## Using Elastic Net with GridSearch Cross-Validation
+# param_grid = {"alpha": np.logspace(-3,3,100), "l1_ratio": [0.1,0.5,0.9]}
+# elastic_net = ElasticNet(max_iter=1000)
+# kf = KFold(n_splits=5, shuffle=True, random_state=42)
+# grid_search = GridSearchCV(elastic_net, param_grid, cv=kf, scoring="neg_mean_squared_error")
+# grid_search.fit(X_train, y_train)
+# print("Best Parameters:", grid_search.best_params_)
+# print("Best CV MSE":, -grid_search.best_score_)
+# best_model = grid_search.best_estimator_
+# y_pred = best_model.predict(X_test)
+# test_mse = mean_squared_error(y_test, y_pred)
 
 # Best hyperparameters
 print(f"Best alpha: {elastic_net.alpha_}")
