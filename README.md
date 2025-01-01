@@ -52,8 +52,10 @@ Regression is a supervised learning task where the goal is to predict a continuo
 3. Stepwise Regression
 
 4. Decision Trees and Ensemble Methods:
-   - Random Forest
-   - Gradient Boosting (XGBoost, LightGBM)
+   - Bagging
+      - Random Forest
+   - Boosting 
+      - Gradient Boosting(XGBoost, LightGBM, Gradient Boosted Trees)
 
 5. Neural Networks:
    - Feedforward Neural Networks (Multi-Layer Perceptron)
@@ -88,8 +90,10 @@ Classification is a supervised learning task where the goal is to predict a disc
 
 6. Ensemble Methods:
    - Bagging (Bootstrap Aggregating)
-   - Random Forest
-   - Boosting (AdaBoost, Gradient Boosting)
+      - Random Forest
+   - Boosting 
+      - AdaBoost
+      - Gradient Boosting (XGBoost, LightGBM, Gradient Boosted Trees)
    - Stacking (Stacked Generalization)
 
 7. Neural Networks:
