@@ -25,7 +25,6 @@ Using metrics like MSE for regression
 
 Optimize model using GridSearchCV or RandomizedSearchCV
 """
-import numpy as np
 from sklearn.datasets import load_diabetes
 from sklearn.model_selection import train_test_split, GridSearchCV
 from sklearn.ensemble import RandomForestRegressor
