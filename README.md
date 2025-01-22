@@ -47,17 +47,21 @@ Regression is a supervised learning task where the goal is to predict a continuo
    - Gradient Descent
    - Regularized Linear Regression (Ridge, Lasso, Elastic Net)
 
-2. Polynomial Regression
+2. Non-Linear Regression
+   - Polynomial Regression
+   - Stepwise Regression
+   - Regression Splines
+   - Smoothing Splines
+   - Local Regression
+   - Generalized Additive Models
 
-3. Stepwise Regression
-
-4. Decision Trees and Ensemble Methods:
+3. Decision Trees and Ensemble Methods:
    - Bagging
       - Random Forest
    - Boosting 
       - Gradient Boosting(XGBoost, LightGBM, Gradient Boosted Trees)
 
-5. Neural Networks:
+4. Neural Networks:
    - Feedforward Neural Networks (Multi-Layer Perceptron)
 
 ### Classification
