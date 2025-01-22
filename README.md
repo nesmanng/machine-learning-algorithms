@@ -138,15 +138,17 @@ Dimensionality reduction is an unsupervised learning task where the goal is to r
 
 1. Principal Component Analysis (PCA)
 
-2. t-Distributed Stochastic Neighbor Embedding (t-SNE)
+2. Partial Least Squares (PLS)
 
-3. Locally Linear Embedding (LLE)
+3. t-Distributed Stochastic Neighbor Embedding (t-SNE)
 
-4. Isometric Mapping (Isomap)
+4. Locally Linear Embedding (LLE)
 
-5. Independent Component Analysis (ICA)
+5. Isometric Mapping (Isomap)
 
-6. Non-Negative Matrix Factorization (NMF)
+6. Independent Component Analysis (ICA)
+
+7. Non-Negative Matrix Factorization (NMF)
 
 These techniques transform the original high-dimensional space into a lower-dimensional space while preserving the essential structure and relationships in the data.
 
