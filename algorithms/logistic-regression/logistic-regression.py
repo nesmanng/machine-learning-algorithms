@@ -22,7 +22,7 @@ y_pred = model.predict(X_test)
 
 # Model evaluation
 cm = confusion_matrix(y_test, y_pred)
-tn, fp, fn, tp = cm.ravel()
+tp, fn, fp, tn = cm.ravel()
 sensitivity = tp / (tp + fn) # True positive rate i.e., how many of the true positives were correctly identified
 specificity = tn / (tn + fp) # True negative rate i.e., how many of the true negatives were correctly identified
 
