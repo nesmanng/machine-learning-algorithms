@@ -33,4 +33,3 @@ print("Sensitivty: ", sensitivity)
 print("Specificity: ", specificity)
 print("Accuracy: ", accuracy)
 
-

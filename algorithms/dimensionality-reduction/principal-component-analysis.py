@@ -1,13 +1,5 @@
 ### Principal Component Analysis (PCA)
 
-"""
-PCA is a statistical procedure that transforms a set of correlated variables into a new set of uncorrelated variables called principal components. The goal is reduce the dimensionality of the data while preserving as much of the original information as possible. It can create new features that capture the most important aspects of the data.
-
-It finds a new set of axes (principal components) that align with the directions of maximum variance in the data. Thus, the first principal component captures the most variation in the data, followed by the second principal component and so on...
-Each principal component is a linear combination of the original variables, and the principal components are orthogonal/perpendicular to each other, meaning that they are uncorrelated.
-
-"""
-
 import numpy as np
 import pandas as pd
 from sklearn.preprocessing import StandardScaler
